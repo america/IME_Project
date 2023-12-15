@@ -33,3 +33,5 @@
 
 # build directry
 build
+
+.ccls-cache
