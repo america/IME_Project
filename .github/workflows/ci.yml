@@ -22,13 +22,3 @@ jobs:
       run: docker run --rm -v ${{ github.workspace }}/coverage_report:/app/coverage_report my-app ./build.sh
 
     # カバレッジレポートのアップロードのためのステップも追加できます(オプショナル)
-
-  setup:
-    runs-on: ubuntu-latest
-  
-    steps:
-    - name: Set up Docker
-      uses: docker/setup-docker@v1
-      with:
-        dockerfile: Dockerfile
-
