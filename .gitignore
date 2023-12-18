@@ -31,7 +31,10 @@
 *.out
 *.app
 
-# build directry
+# ignore directories
 build
-
 .ccls-cache
+coverage_report
+
+# ignore files
+coverage.info
