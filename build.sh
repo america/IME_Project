@@ -26,7 +26,7 @@ cmake --build build
 
 # Run tests and generate coverage report
 ./build/test/runTests
-#lcov --capture --directory ./build/test --output-file coverage.info
-lcov --capture --ignore-errors mismatch --directory ./build/test --output-file coverage.info
+lcov --capture --directory ./build/test --output-file coverage.info
+#lcov --capture --ignore-errors mismatch --directory ./build/test --output-file coverage.info
 lcov --remove coverage.info '/usr/*' --output-file coverage.info
 genhtml coverage.info --output-directory ./coverage_report
