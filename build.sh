@@ -17,7 +17,7 @@ done
 
 # Clear the content of coverage_report directory, if it exists
 if [ -d "coverage_report" ]; then
-  rm -r coverage_report/*
+  rm -rf coverage_report/*
 fi
 
 # Configure and build the project
