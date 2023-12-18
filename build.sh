@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ ! -d "coverage_report" ]; then
+  mkdir coverage_report
+fi
+
 # Specify the compiler explicitly
 export CXX=/usr/bin/g++-11
 
