@@ -18,8 +18,9 @@ jobs:
     - name: install googletest
       run: |
         sudo apt-get install libgtest-dev -y
-        cd /usr/src/gtest
-        sudo cmake CMakeLists.txt
+        sudo cp -r /usr/src/gtest /usr/src/mygtest
+        cd /usr/src/mygtest
+        sudo cmake .
         sudo make
         sudo cp *.a /usr/lib
     - name: run build.sh
