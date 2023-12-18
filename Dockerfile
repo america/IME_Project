@@ -1,4 +1,4 @@
-FROM gentoo/stage3-amd64
+FROM gentoo/stage3
 
 RUN emerge --sync
 RUN emerge dev-util/lcov dev-util/cmake app-emulation/docker
