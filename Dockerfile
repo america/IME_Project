@@ -10,4 +10,6 @@ RUN emerge app-containers/docker
 WORKDIR /app
 COPY . /app
 
-CMD ["./build.sh"]
+RUN chmod +x /app/build.sh
+
+CMD ["sh", "./build.sh"]
