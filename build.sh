@@ -4,12 +4,17 @@
 export CXX=/usr/bin/g++-11
 
 # Remove directories and files if they exist
-for item in build coverage_report coverage.info
+for item in build coverage.info
 do
   if [ -e "$item" ]; then
     rm -r "$item"
   fi
 done
+
+# Clear the content of coverage_report directory, if it exists
+if [ -d "coverage_report" ]; then
+  rm -r coverage_report/*
+fi
 
 # Configure and build the project
 cmake -S . -B build
