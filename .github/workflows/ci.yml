@@ -22,6 +22,6 @@ jobs:
         cd /usr/src/mygtest
         sudo cmake .
         sudo make
-        sudo cp *.a /usr/lib
+        sudo cp ./lib/*.a /usr/lib
     - name: run build.sh
       run: chmod +x ./build.sh && ./build.sh
